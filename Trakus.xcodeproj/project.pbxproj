@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0D82301815A46D005508F1 /* NSDateFormated.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D822F1815A46D005508F1 /* NSDateFormated.m */; };
+		9C0D82331815AB14005508F1 /* calendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D82321815AB14005508F1 /* calendarViewController.m */; };
 		9C3801111800CC00009A79F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3801101800CC00009A79F7 /* Foundation.framework */; };
 		9C3801131800CC00009A79F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3801121800CC00009A79F7 /* CoreGraphics.framework */; };
 		9C3801151800CC00009A79F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3801141800CC00009A79F7 /* UIKit.framework */; };
@@ -21,6 +23,21 @@
 		9C3801321800CC01009A79F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3801141800CC00009A79F7 /* UIKit.framework */; };
 		9C38013A1800CC01009A79F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C3801381800CC01009A79F7 /* InfoPlist.strings */; };
 		9C38013C1800CC01009A79F7 /* TrakusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C38013B1800CC01009A79F7 /* TrakusTests.m */; };
+		9C3801471800DCA1009A79F7 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3801461800DCA1009A79F7 /* DataViewController.m */; };
+		9C38014D1800E2DB009A79F7 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C38014C1800E2DB009A79F7 /* LaunchViewController.m */; };
+		9C3801511800F195009A79F7 /* masterArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3801501800F195009A79F7 /* masterArray.m */; };
+		9C3801581800F3D7009A79F7 /* sleepTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3801571800F3D7009A79F7 /* sleepTime.m */; };
+		9C38015B1800F49C009A79F7 /* anxiety.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C38015A1800F49C009A79F7 /* anxiety.m */; };
+		9C38015E1800F5FC009A79F7 /* mood.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C38015D1800F5FC009A79F7 /* mood.m */; };
+		9C83C8651803291800EAD954 /* temperTantrum.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83C8641803291800EAD954 /* temperTantrum.m */; };
+		9C83C868180329C800EAD954 /* aggression.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83C867180329C800EAD954 /* aggression.m */; };
+		9C83C87118032AED00EAD954 /* panicAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83C87018032AED00EAD954 /* panicAttack.m */; };
+		9C83C87418032D8600EAD954 /* setupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83C87318032D8600EAD954 /* setupViewController.m */; };
+		9C83C87A1804C68B00EAD954 /* testVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83C8791804C68B00EAD954 /* testVC.m */; };
+		9C83C87D1804DF6800EAD954 /* setup2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83C87C1804DF6800EAD954 /* setup2ViewController.m */; };
+		9CC1F22C1809F1D200FB939D /* confirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1F22B1809F1D200FB939D /* confirmViewController.m */; };
+		9CC1F22F1809F4D300FB939D /* firstTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1F22E1809F4D300FB939D /* firstTime.m */; };
+		9CDB6FE21807840500CE8700 /* resetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB6FE11807840500CE8700 /* resetViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C0D822E1815A46D005508F1 /* NSDateFormated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateFormated.h; path = Classes/NSDateFormated.h; sourceTree = "<group>"; };
+		9C0D822F1815A46D005508F1 /* NSDateFormated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateFormated.m; path = Classes/NSDateFormated.m; sourceTree = "<group>"; };
+		9C0D82311815AB14005508F1 /* calendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = calendarViewController.h; path = "View Controllers/calendarViewController.h"; sourceTree = "<group>"; };
+		9C0D82321815AB14005508F1 /* calendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = calendarViewController.m; path = "View Controllers/calendarViewController.m"; sourceTree = "<group>"; };
 		9C38010D1800CC00009A79F7 /* Trakus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trakus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3801101800CC00009A79F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C3801121800CC00009A79F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +74,36 @@
 		9C3801371800CC01009A79F7 /* TrakusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrakusTests-Info.plist"; sourceTree = "<group>"; };
 		9C3801391800CC01009A79F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C38013B1800CC01009A79F7 /* TrakusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrakusTests.m; sourceTree = "<group>"; };
+		9C3801451800DCA1009A79F7 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataViewController.h; path = "View Controllers/DataViewController.h"; sourceTree = "<group>"; };
+		9C3801461800DCA1009A79F7 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataViewController.m; path = "View Controllers/DataViewController.m"; sourceTree = "<group>"; };
+		9C38014B1800E2DB009A79F7 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchViewController.h; path = "View Controllers/LaunchViewController.h"; sourceTree = "<group>"; };
+		9C38014C1800E2DB009A79F7 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchViewController.m; path = "View Controllers/LaunchViewController.m"; sourceTree = "<group>"; };
+		9C38014F1800F195009A79F7 /* masterArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = masterArray.h; path = Classes/masterArray.h; sourceTree = "<group>"; };
+		9C3801501800F195009A79F7 /* masterArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = masterArray.m; path = Classes/masterArray.m; sourceTree = "<group>"; };
+		9C3801561800F3D7009A79F7 /* sleepTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sleepTime.h; path = Classes/sleepTime.h; sourceTree = "<group>"; };
+		9C3801571800F3D7009A79F7 /* sleepTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = sleepTime.m; path = Classes/sleepTime.m; sourceTree = "<group>"; };
+		9C3801591800F49C009A79F7 /* anxiety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = anxiety.h; path = Classes/anxiety.h; sourceTree = "<group>"; };
+		9C38015A1800F49C009A79F7 /* anxiety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = anxiety.m; path = Classes/anxiety.m; sourceTree = "<group>"; };
+		9C38015C1800F5FC009A79F7 /* mood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mood.h; path = Classes/mood.h; sourceTree = "<group>"; };
+		9C38015D1800F5FC009A79F7 /* mood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mood.m; path = Classes/mood.m; sourceTree = "<group>"; };
+		9C83C8631803291800EAD954 /* temperTantrum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = temperTantrum.h; path = Classes/temperTantrum.h; sourceTree = "<group>"; };
+		9C83C8641803291800EAD954 /* temperTantrum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = temperTantrum.m; path = Classes/temperTantrum.m; sourceTree = "<group>"; };
+		9C83C866180329C800EAD954 /* aggression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aggression.h; path = Classes/aggression.h; sourceTree = "<group>"; };
+		9C83C867180329C800EAD954 /* aggression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = aggression.m; path = Classes/aggression.m; sourceTree = "<group>"; };
+		9C83C86F18032AED00EAD954 /* panicAttack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = panicAttack.h; path = Classes/panicAttack.h; sourceTree = "<group>"; };
+		9C83C87018032AED00EAD954 /* panicAttack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = panicAttack.m; path = Classes/panicAttack.m; sourceTree = "<group>"; };
+		9C83C87218032D8600EAD954 /* setupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = setupViewController.h; path = "View Controllers/setupViewController.h"; sourceTree = "<group>"; };
+		9C83C87318032D8600EAD954 /* setupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = setupViewController.m; path = "View Controllers/setupViewController.m"; sourceTree = "<group>"; };
+		9C83C8781804C68B00EAD954 /* testVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testVC.h; path = "View Controllers/testVC.h"; sourceTree = "<group>"; };
+		9C83C8791804C68B00EAD954 /* testVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testVC.m; path = "View Controllers/testVC.m"; sourceTree = "<group>"; tabWidth = 4; };
+		9C83C87B1804DF6800EAD954 /* setup2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = setup2ViewController.h; path = "View Controllers/setup2ViewController.h"; sourceTree = "<group>"; };
+		9C83C87C1804DF6800EAD954 /* setup2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = setup2ViewController.m; path = "View Controllers/setup2ViewController.m"; sourceTree = "<group>"; };
+		9CC1F22A1809F1D200FB939D /* confirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = confirmViewController.h; path = "View Controllers/confirmViewController.h"; sourceTree = "<group>"; };
+		9CC1F22B1809F1D200FB939D /* confirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = confirmViewController.m; path = "View Controllers/confirmViewController.m"; sourceTree = "<group>"; };
+		9CC1F22D1809F4D300FB939D /* firstTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = firstTime.h; path = Classes/firstTime.h; sourceTree = "<group>"; };
+		9CC1F22E1809F4D300FB939D /* firstTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstTime.m; path = Classes/firstTime.m; sourceTree = "<group>"; };
+		9CDB6FE01807840500CE8700 /* resetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resetViewController.h; path = "View Controllers/resetViewController.h"; sourceTree = "<group>"; };
+		9CDB6FE11807840500CE8700 /* resetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = resetViewController.m; path = "View Controllers/resetViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +166,8 @@
 				9C38011F1800CC00009A79F7 /* TrakusAppDelegate.h */,
 				9C3801201800CC00009A79F7 /* TrakusAppDelegate.m */,
 				9C3801221800CC00009A79F7 /* Main.storyboard */,
-				9C3801251800CC00009A79F7 /* TrakusViewController.h */,
-				9C3801261800CC00009A79F7 /* TrakusViewController.m */,
+				9C3801521800F19C009A79F7 /* Classes */,
+				9C38014E1800ECD8009A79F7 /* VCs */,
 				9C3801281800CC00009A79F7 /* Images.xcassets */,
 				9C3801171800CC00009A79F7 /* Supporting Files */,
 			);
@@ -150,6 +201,56 @@
 				9C3801381800CC01009A79F7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C38014E1800ECD8009A79F7 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				9C0D82311815AB14005508F1 /* calendarViewController.h */,
+				9C0D82321815AB14005508F1 /* calendarViewController.m */,
+				9CC1F22A1809F1D200FB939D /* confirmViewController.h */,
+				9CC1F22B1809F1D200FB939D /* confirmViewController.m */,
+				9CDB6FE01807840500CE8700 /* resetViewController.h */,
+				9CDB6FE11807840500CE8700 /* resetViewController.m */,
+				9C83C87218032D8600EAD954 /* setupViewController.h */,
+				9C83C87318032D8600EAD954 /* setupViewController.m */,
+				9C83C87B1804DF6800EAD954 /* setup2ViewController.h */,
+				9C83C87C1804DF6800EAD954 /* setup2ViewController.m */,
+				9C38014B1800E2DB009A79F7 /* LaunchViewController.h */,
+				9C38014C1800E2DB009A79F7 /* LaunchViewController.m */,
+				9C83C8781804C68B00EAD954 /* testVC.h */,
+				9C83C8791804C68B00EAD954 /* testVC.m */,
+				9C3801451800DCA1009A79F7 /* DataViewController.h */,
+				9C3801461800DCA1009A79F7 /* DataViewController.m */,
+				9C3801251800CC00009A79F7 /* TrakusViewController.h */,
+				9C3801261800CC00009A79F7 /* TrakusViewController.m */,
+			);
+			name = VCs;
+			sourceTree = "<group>";
+		};
+		9C3801521800F19C009A79F7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9C0D822E1815A46D005508F1 /* NSDateFormated.h */,
+				9C0D822F1815A46D005508F1 /* NSDateFormated.m */,
+				9C83C86F18032AED00EAD954 /* panicAttack.h */,
+				9C83C87018032AED00EAD954 /* panicAttack.m */,
+				9C83C866180329C800EAD954 /* aggression.h */,
+				9C83C867180329C800EAD954 /* aggression.m */,
+				9C83C8631803291800EAD954 /* temperTantrum.h */,
+				9C83C8641803291800EAD954 /* temperTantrum.m */,
+				9C38015C1800F5FC009A79F7 /* mood.h */,
+				9C38015D1800F5FC009A79F7 /* mood.m */,
+				9C3801591800F49C009A79F7 /* anxiety.h */,
+				9C38015A1800F49C009A79F7 /* anxiety.m */,
+				9C3801561800F3D7009A79F7 /* sleepTime.h */,
+				9C3801571800F3D7009A79F7 /* sleepTime.m */,
+				9C38014F1800F195009A79F7 /* masterArray.h */,
+				9C3801501800F195009A79F7 /* masterArray.m */,
+				9CC1F22D1809F4D300FB939D /* firstTime.h */,
+				9CC1F22E1809F4D300FB939D /* firstTime.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +301,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Hi Dev Mobile";
 				TargetAttributes = {
+					9C38010C1800CC00009A79F7 = {
+						DevelopmentTeam = XFPNXGMBCV;
+					};
 					9C38012D1800CC01009A79F7 = {
 						TestTargetID = 9C38010C1800CC00009A79F7;
 					};
@@ -250,9 +354,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C83C8651803291800EAD954 /* temperTantrum.m in Sources */,
+				9C3801471800DCA1009A79F7 /* DataViewController.m in Sources */,
+				9CDB6FE21807840500CE8700 /* resetViewController.m in Sources */,
+				9C38015B1800F49C009A79F7 /* anxiety.m in Sources */,
 				9C3801211800CC00009A79F7 /* TrakusAppDelegate.m in Sources */,
+				9CC1F22F1809F4D300FB939D /* firstTime.m in Sources */,
+				9C38015E1800F5FC009A79F7 /* mood.m in Sources */,
 				9C38011D1800CC00009A79F7 /* main.m in Sources */,
+				9C83C87A1804C68B00EAD954 /* testVC.m in Sources */,
+				9C3801511800F195009A79F7 /* masterArray.m in Sources */,
+				9C38014D1800E2DB009A79F7 /* LaunchViewController.m in Sources */,
+				9C3801581800F3D7009A79F7 /* sleepTime.m in Sources */,
+				9C83C868180329C800EAD954 /* aggression.m in Sources */,
 				9C3801271800CC00009A79F7 /* TrakusViewController.m in Sources */,
+				9CC1F22C1809F1D200FB939D /* confirmViewController.m in Sources */,
+				9C83C87D1804DF6800EAD954 /* setup2ViewController.m in Sources */,
+				9C0D82331815AB14005508F1 /* calendarViewController.m in Sources */,
+				9C83C87118032AED00EAD954 /* panicAttack.m in Sources */,
+				9C83C87418032D8600EAD954 /* setupViewController.m in Sources */,
+				9C0D82301815A46D005508F1 /* NSDateFormated.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,10 +500,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trakus/Trakus-Prefix.pch";
 				INFOPLIST_FILE = "Trakus/Trakus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,10 +518,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Trakus/Trakus-Prefix.pch";
 				INFOPLIST_FILE = "Trakus/Trakus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -461,6 +592,7 @@
 				9C3801411800CC01009A79F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C3801421800CC01009A79F7 /* Build configuration list for PBXNativeTarget "TrakusTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +601,7 @@
 				9C3801441800CC01009A79F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
