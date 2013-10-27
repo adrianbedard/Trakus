@@ -11,7 +11,7 @@
 @interface calendarViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *dataCheck;
 @property (strong, nonatomic) NSString *fu;
-@property (strong, nonatomic) NSMutableArray *primaryData;
+@property (strong, nonatomic) NSArray *primaryData;
 @property (strong, nonatomic) NSMutableArray *secondaryData;
 @property (strong, nonatomic) NSMutableArray *sleepData;
 
@@ -27,24 +27,30 @@
     }
     return self;
 }
+- (IBAction)testButton:(UIButton *)sender {
+	NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
+	self.primaryData = [data arrayForKey:@"primaryDataArray"];
+	self.secondaryData = [data objectForKey:@"secondaryDataArray"];
+	self.sleepData = [data objectForKey:@"sleepDataArray"];
+	
+	
+	self.fu = [NSString stringWithFormat:@"%@\n", [self.primaryData objectAtIndex:0]];
+	
+	for(int i = 1; i < self.primaryData.count; i++)
+		{
+		
+		NSString *test = [NSString stringWithFormat:@"%@\n", [self.primaryData objectAtIndex:i]];
+		self.fu = [self.fu stringByAppendingString:test];
+		}
+	
+	self.dataCheck.text = self.fu;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-	NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
-	self.primaryData = [data objectForKey:@"primaryDataArray"];
-	self.secondaryData = [data objectForKey:@"secondaryDataArray"];
-	self.sleepData = [data objectForKey:@"sleepDataArray"];
 	
-	for(int i = 0; i < self.primaryData.count; i++)
-		{
-		NSNumber *datum = [self.primaryData objectAtIndex:i];
-		int yourInteger = [datum intValue];
-		NSString *test = [NSString stringWithFormat:@"%d\n", yourInteger];
-		self.fu = [self.fu stringByAppendingString:test];
-		}
-	self.dataCheck.text = self.fu;
 }
 
 - (void)didReceiveMemoryWarning

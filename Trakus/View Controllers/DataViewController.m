@@ -24,6 +24,7 @@
 @property (strong, nonatomic) NSMutableArray *secondaryData;
 @property (strong, nonatomic) NSMutableArray *sleepData;
 @property (nonatomic) int dayDiff;
+@property (strong, nonatomic) NSNumber *ratingObject;
 @end
 
 @implementation DataViewController
@@ -33,6 +34,7 @@
 	self.occurences = [sender value];
 	[self updateUI];
 }
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -69,9 +71,17 @@
 	NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
 	self.behavior = [data objectForKey:@"behavior"];
 	
+	
+	
 	self.primaryData = [data objectForKey:@"primaryDataArray"];
 	self.secondaryData = [data objectForKey:@"secondaryDataArray"];
 	self.sleepData = [data objectForKey:@"sleepDataArray"];
+	
+	if(self.primaryData == nil)
+		{
+		self.primaryData = [NSMutableArray arrayWithObject:@"-1"];
+		}
+	
 	
 	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"dd-MM-yyyy"];
@@ -83,7 +93,8 @@
     NSDateComponents *difference = [[NSCalendar currentCalendar] components:flags fromDate:startDate toDate:today options:0];
 	
     self.dayDiff = [difference day];
-
+		//plist testing
+	
 
 	
 	[self updateUI];
@@ -97,10 +108,13 @@
 
 -(void)updateUI
 {
-		NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
+				NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
 	//update the UI
 	self.displayedOccurences.text = [NSString stringWithFormat:@"%d", self.occurences];
 	self.sleepLabel.text = [NSString stringWithFormat:@"Hours slept: %d hours", self.sleep];
+	
+	
+	
 	self.ratingLabel.text = [NSString stringWithFormat:@"%@ rating for today: %d", self.behavior, self.rating];
 	
 	self.occurencesLabel.alpha = 1;
@@ -116,6 +130,7 @@
 		self.counter.enabled = false;
 		}
 	
+	
 	NSNumber *ratingObject = [NSNumber numberWithInteger:self.rating];
 	[self.primaryData replaceObjectAtIndex:self.dayDiff withObject:ratingObject];
 	
@@ -125,9 +140,9 @@
 	NSNumber *sleepObject = [NSNumber numberWithInteger:self.sleep];
 	[self.sleepData replaceObjectAtIndex:self.dayDiff withObject:sleepObject];
 	
-	[data setObject:self.primaryData forKey:@"primaryDataArray"];
-	[data setObject:self.secondaryData forKey:@"secondaryDataArray"];
-	[data setObject:self.sleepData forKey:@"sleepDataArray"];
+		[data setObject:self.primaryData forKey:@"primaryDataArray"];
+		[data setObject:self.secondaryData forKey:@"secondaryDataArray"];
+		[data setObject:self.sleepData forKey:@"sleepDataArray"];
 
 
 	self.displayedDate.text = self.printedDate;
