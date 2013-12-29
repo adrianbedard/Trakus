@@ -10,7 +10,7 @@
 #import "masterArray.h"
 
 @interface LaunchViewController : UIViewController
-@property (strong, nonatomic) masterArray *data;
+	//@property (strong, nonatomic) masterArray *data;
 @property (strong, nonatomic) NSUserDefaults *masterBehavior;
 @property (nonatomic) BOOL firstTime;
 @end

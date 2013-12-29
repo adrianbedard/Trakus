@@ -11,6 +11,9 @@
 @interface setup2ViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *title;
 @property (strong, nonatomic) IBOutlet UIDatePicker *alertTime;
+@property (copy, nonatomic) NSMutableArray *primaryData;
+@property (copy, nonatomic) NSMutableArray *secondaryData;
+@property (copy, nonatomic) NSMutableArray *sleepData;
 
 @end
 
@@ -42,15 +45,26 @@
 		//NSString *string = [NSData ];
 }
 
+
+
 - (IBAction)continue:(UIButton *)sender
 {
 	NSDate *alertTime = self.alertTime.date;
 	NSDateFormatter *dateFormat = [[NSDateFormatter alloc]init];
 	[dateFormat setDateFormat:@"HH:mm"];
 	NSString *timeString = [dateFormat stringFromDate:alertTime];
+	
+	
 
 		NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
 		[data setObject:timeString forKey:@"alertTime"];
+	
+	self.primaryData = [[NSMutableArray alloc] initWithArray: @[@"N/A"]];
+	self.secondaryData = [[NSMutableArray alloc] initWithArray: @[@"N/A"]];
+	self.sleepData = [[NSMutableArray alloc] initWithArray: @[@"N/A"]];
+	[data setObject:self.primaryData forKey:@"primaryDataArray"];
+	[data setObject:self.secondaryData forKey:@"secondaryDataArray"];
+	[data setObject:self.sleepData forKey:@"sleepDataArray"];
 	
 	[self performSegueWithIdentifier:@"toConfirm" sender:self];
 }
