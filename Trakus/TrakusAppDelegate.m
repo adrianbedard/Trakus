@@ -26,6 +26,18 @@
 {
 	// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
 	// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+	
+		NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
+	UILocalNotification *notification = [[UILocalNotification alloc]init];
+	notification.repeatInterval = NSDayCalendarUnit;
+	[notification setAlertBody:@"Please add today's data for Trakus."];
+	[notification setFireDate:[NSDate dateWithTimeIntervalSince1970:[data doubleForKey:@"notificationTime"]]];
+	[notification setTimeZone:[NSTimeZone  defaultTimeZone]];
+	[application setScheduledLocalNotifications:[NSArray arrayWithObject:notification]];
+	
+	
+	
+	
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application

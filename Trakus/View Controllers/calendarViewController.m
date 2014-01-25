@@ -64,6 +64,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 	
+		//	self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default BackGround.png"]];
+	
+	
+	
 	NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
 	self.dateChange = false;
 	self.dayDiff = [[data objectForKey:@"dayDiff"] intValue];

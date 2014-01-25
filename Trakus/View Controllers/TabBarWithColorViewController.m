@@ -1,18 +1,18 @@
 //
-//  resetViewController.m
+//  TabBarWithColorViewController.m
 //  Trakus
 //
-//  Created by ADRIAN BEDARD on 10/10/13.
-//  Copyright (c) 2013 Hi Dev Mobile. All rights reserved.
+//  Created by ADRIAN BEDARD on 1/14/14.
+//  Copyright (c) 2014 Hi Dev Mobile. All rights reserved.
 //
 
-#import "resetViewController.h"
+#import "TabBarWithColorViewController.h"
 
-@interface resetViewController ()
+@interface TabBarWithColorViewController ()
 
 @end
 
-@implementation resetViewController
+@implementation TabBarWithColorViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,21 +22,17 @@
     }
     return self;
 }
-- (IBAction)resetSegue:(id)sender
-{
-	NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
-	[data setBool:true forKey:@"firstTime"];
-	[data setObject:Nil forKey:@"primaryDataArray"];
-	[data setObject:Nil forKey:@"secondaryDataArray"];
-	[data setObject:Nil forKey:@"sleepDataArray"];
-	[self performSegueWithIdentifier:@"reset" sender:nil];
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 	//self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default BackGround.png"]];
+	UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TrakusTab1.1.png"]];
+
+	[self.view addSubview:backgroundView];
+	[self.view sendSubviewToBack:backgroundView];
+	
 }
 
 - (void)didReceiveMemoryWarning

@@ -35,12 +35,18 @@
 		9C83C87418032D8600EAD954 /* setupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83C87318032D8600EAD954 /* setupViewController.m */; };
 		9C83C87A1804C68B00EAD954 /* testVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83C8791804C68B00EAD954 /* testVC.m */; };
 		9C83C87D1804DF6800EAD954 /* setup2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83C87C1804DF6800EAD954 /* setup2ViewController.m */; };
+		9CBBF78A189345890072B0EF /* TrakusTab1.0.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBBF789189345890072B0EF /* TrakusTab1.0.png */; };
 		9CC1EBA0186CB18F00A32E6D /* emailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1EB9F186CB18F00A32E6D /* emailViewController.m */; };
 		9CC1EBA2186D0E2B00A32E6D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC1EBA1186D0E2B00A32E6D /* MessageUI.framework */; };
 		9CC1EBA5186D0F5300A32E6D /* MessageComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1EBA4186D0F5300A32E6D /* MessageComposerViewController.m */; };
 		9CC1F22C1809F1D200FB939D /* confirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1F22B1809F1D200FB939D /* confirmViewController.m */; };
 		9CC1F22F1809F4D300FB939D /* firstTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1F22E1809F4D300FB939D /* firstTime.m */; };
 		9CDB6FE21807840500CE8700 /* resetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDB6FE11807840500CE8700 /* resetViewController.m */; };
+		9CE120141886078E006D4F27 /* FullLayout.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9CE120131886078E006D4F27 /* FullLayout.pdf */; };
+		9CE12016188609C2006D4F27 /* Default Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CE12015188609C2006D4F27 /* Default Background.png */; };
+		9CE1201818860C16006D4F27 /* FullLayout-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CE1201718860C16006D4F27 /* FullLayout-1.png */; };
+		9CE1201E18860DA2006D4F27 /* TabBarWithColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE1201D18860DA2006D4F27 /* TabBarWithColorViewController.m */; };
+		9CE120211886113B006D4F27 /* Notifier Background.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE120201886113B006D4F27 /* Notifier Background.m */; };
 		9CF03E95184EB0C000A417E8 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF03E94184EB0C000A417E8 /* CoreText.framework */; };
 		9CF03E9B184EB10600A417E8 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF03E9A184EB10600A417E8 /* libstdc++.dylib */; };
 /* End PBXBuildFile section */
@@ -102,6 +108,7 @@
 		9C83C8791804C68B00EAD954 /* testVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testVC.m; path = "View Controllers/testVC.m"; sourceTree = "<group>"; tabWidth = 4; };
 		9C83C87B1804DF6800EAD954 /* setup2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = setup2ViewController.h; path = "View Controllers/setup2ViewController.h"; sourceTree = "<group>"; };
 		9C83C87C1804DF6800EAD954 /* setup2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = setup2ViewController.m; path = "View Controllers/setup2ViewController.m"; sourceTree = "<group>"; };
+		9CBBF789189345890072B0EF /* TrakusTab1.0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrakusTab1.0.png; sourceTree = "<group>"; };
 		9CC1EB9E186CB18F00A32E6D /* emailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = emailViewController.h; path = "View Controllers/emailViewController.h"; sourceTree = "<group>"; };
 		9CC1EB9F186CB18F00A32E6D /* emailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = emailViewController.m; path = "View Controllers/emailViewController.m"; sourceTree = "<group>"; };
 		9CC1EBA1186D0E2B00A32E6D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -113,6 +120,13 @@
 		9CC1F22E1809F4D300FB939D /* firstTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstTime.m; path = Classes/firstTime.m; sourceTree = "<group>"; };
 		9CDB6FE01807840500CE8700 /* resetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resetViewController.h; path = "View Controllers/resetViewController.h"; sourceTree = "<group>"; };
 		9CDB6FE11807840500CE8700 /* resetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = resetViewController.m; path = "View Controllers/resetViewController.m"; sourceTree = "<group>"; };
+		9CE120131886078E006D4F27 /* FullLayout.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FullLayout.pdf; sourceTree = "<group>"; };
+		9CE12015188609C2006D4F27 /* Default Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default Background.png"; sourceTree = "<group>"; };
+		9CE1201718860C16006D4F27 /* FullLayout-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FullLayout-1.png"; sourceTree = "<group>"; };
+		9CE1201C18860DA2006D4F27 /* TabBarWithColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarWithColorViewController.h; path = "View Controllers/TabBarWithColorViewController.h"; sourceTree = "<group>"; };
+		9CE1201D18860DA2006D4F27 /* TabBarWithColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarWithColorViewController.m; path = "View Controllers/TabBarWithColorViewController.m"; sourceTree = "<group>"; };
+		9CE1201F1886113B006D4F27 /* Notifier Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Notifier Background.h"; path = "View Controllers/Notifier Background.h"; sourceTree = "<group>"; };
+		9CE120201886113B006D4F27 /* Notifier Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Notifier Background.m"; path = "View Controllers/Notifier Background.m"; sourceTree = "<group>"; };
 		9CF03E94184EB0C000A417E8 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		9CF03E9A184EB10600A417E8 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -182,7 +196,11 @@
 			children = (
 				9C38011F1800CC00009A79F7 /* TrakusAppDelegate.h */,
 				9C3801201800CC00009A79F7 /* TrakusAppDelegate.m */,
+				9CE120131886078E006D4F27 /* FullLayout.pdf */,
+				9CE12015188609C2006D4F27 /* Default Background.png */,
+				9CE1201718860C16006D4F27 /* FullLayout-1.png */,
 				9C3801221800CC00009A79F7 /* Main.storyboard */,
+				9CBBF789189345890072B0EF /* TrakusTab1.0.png */,
 				9C3801521800F19C009A79F7 /* Classes */,
 				9C38014E1800ECD8009A79F7 /* VCs */,
 				9C3801281800CC00009A79F7 /* Images.xcassets */,
@@ -222,6 +240,10 @@
 		9C38014E1800ECD8009A79F7 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				9CE1201F1886113B006D4F27 /* Notifier Background.h */,
+				9CE120201886113B006D4F27 /* Notifier Background.m */,
+				9CE1201C18860DA2006D4F27 /* TabBarWithColorViewController.h */,
+				9CE1201D18860DA2006D4F27 /* TabBarWithColorViewController.m */,
 				9C0D82311815AB14005508F1 /* calendarViewController.h */,
 				9C0D82321815AB14005508F1 /* calendarViewController.m */,
 				9CC1F22A1809F1D200FB939D /* confirmViewController.h */,
@@ -356,6 +378,10 @@
 				9C3801291800CC00009A79F7 /* Images.xcassets in Resources */,
 				9C38011B1800CC00009A79F7 /* InfoPlist.strings in Resources */,
 				9C3801241800CC00009A79F7 /* Main.storyboard in Resources */,
+				9CBBF78A189345890072B0EF /* TrakusTab1.0.png in Resources */,
+				9CE120141886078E006D4F27 /* FullLayout.pdf in Resources */,
+				9CE1201818860C16006D4F27 /* FullLayout-1.png in Resources */,
+				9CE12016188609C2006D4F27 /* Default Background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +403,7 @@
 				9C83C8651803291800EAD954 /* temperTantrum.m in Sources */,
 				9C3801471800DCA1009A79F7 /* DataViewController.m in Sources */,
 				9CDB6FE21807840500CE8700 /* resetViewController.m in Sources */,
+				9CE1201E18860DA2006D4F27 /* TabBarWithColorViewController.m in Sources */,
 				9C38015B1800F49C009A79F7 /* anxiety.m in Sources */,
 				9C3801211800CC00009A79F7 /* TrakusAppDelegate.m in Sources */,
 				9CC1F22F1809F4D300FB939D /* firstTime.m in Sources */,
@@ -389,6 +416,7 @@
 				9C3801581800F3D7009A79F7 /* sleepTime.m in Sources */,
 				9C83C868180329C800EAD954 /* aggression.m in Sources */,
 				9C3801271800CC00009A79F7 /* TrakusViewController.m in Sources */,
+				9CE120211886113B006D4F27 /* Notifier Background.m in Sources */,
 				9CC1F22C1809F1D200FB939D /* confirmViewController.m in Sources */,
 				9C83C87D1804DF6800EAD954 /* setup2ViewController.m in Sources */,
 				9C0D82331815AB14005508F1 /* calendarViewController.m in Sources */,

@@ -33,6 +33,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 	
+		//	self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default BackGround.png"]];
+	UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TrakusTab1.1.png"]];
+	
+	[self.view addSubview:backgroundView];
+	[self.view sendSubviewToBack:backgroundView];
+	
 	NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
 	self.behavior = [@"You are tracking: " stringByAppendingString:[data objectForKey:@"behavior"]];
 	
@@ -64,6 +70,8 @@
 	NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
 	[data setBool:true forKey:@"firstTime"];
 	[data setObject: today forKey:@"startDay"];
+	
+	
 	
 	[self performSegueWithIdentifier:@"toStart" sender:self];
 }

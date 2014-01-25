@@ -31,6 +31,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+	//self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default BackGround.png"]];
+	/*
+	UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TrakusTab1.1.png"]];
+	
+	[self.view addSubview:backgroundView];
+	[self.view sendSubviewToBack:backgroundView];
+	 */
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,6 +46,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)sleep:(UIButton *)sender {
+	NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
+	[data setObject:@"sleep" forKey:@"behavior"];
+	
+	[self performSegueWithIdentifier:@"toSetup2" sender:self];
+}
 
 - (IBAction)anxiety:(UIButton *)sender
 {

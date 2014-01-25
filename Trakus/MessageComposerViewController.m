@@ -91,7 +91,7 @@
 {
     [super viewDidLoad];
 	
-	
+		//self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default BackGround.png"]];
 
 }
 - (IBAction)makeEmail:(UIButton *)sender {
@@ -206,7 +206,7 @@
 	
 	for(int count = 0; count <= self.dayDiff; count++)
 		{
-		NSString *output = [[NSString alloc] initWithFormat:@"Day %i: %@ severity: %@, Occurences: %@, Sleep: %@\n", count, self.behavior, self.primaryData[count], self.secondaryData[count], self.sleepData[count]];
+		NSString *output = [[NSString alloc] initWithFormat:@"Day %i: %@ severity: %@\n", count, self.behavior, self.primaryData[count]];
 		dataSection = [dataSection stringByAppendingString:output];
 		}
 	NSString *emailBody = [message stringByAppendingString:dataSection];

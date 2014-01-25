@@ -32,6 +32,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+	//self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default BackGround.png"]];
+	/*
+	 UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TrakusTab1.1.png"]];
+	
+	[self.view addSubview:backgroundView];
+	[self.view sendSubviewToBack:backgroundView];
+	 */
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,11 +59,12 @@
 	NSDate *alertTime = self.alertTime.date;
 	NSDateFormatter *dateFormat = [[NSDateFormatter alloc]init];
 	[dateFormat setDateFormat:@"HH:mm"];
-	NSString *timeString = [dateFormat stringFromDate:alertTime];
-	
+		NSString *timeString = [dateFormat stringFromDate:alertTime];
+	NSTimeInterval alertGap = [self.alertTime.date timeIntervalSince1970];
 	
 
 		NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
+		[data setDouble:alertGap forKey:@"notificationTime"];
 		[data setObject:timeString forKey:@"alertTime"];
 	
 	self.primaryData = [[NSMutableArray alloc] initWithArray: @[@"N/A"]];

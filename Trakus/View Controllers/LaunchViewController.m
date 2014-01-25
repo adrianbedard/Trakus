@@ -31,8 +31,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+	UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TrakusTab1.1.png"]];
 	
-
+	[self.view addSubview:backgroundView];
+	[self.view sendSubviewToBack:backgroundView];
+	[self.view addSubview:backgroundView];
+		//self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"TrakusDefault1.0.png"]];
 	
 }
 

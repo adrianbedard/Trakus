@@ -27,6 +27,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+	self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default BackGround.png"]];
+	
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:FALSE];
 }
 
 - (void)didReceiveMemoryWarning

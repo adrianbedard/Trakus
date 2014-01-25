@@ -59,7 +59,11 @@
 {
     [super viewDidAppear:FALSE];
 	// Do any additional setup after loading the view.
+	//self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default BackGround.png"]];
+	//UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default BackGround.png"]];
+	//	[self.view addSubview:backgroundView];
 	
+		//self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default BackGround.png"]];
 	//Saves the current date as a string: Today is: MM/dd
 	NSDate *today = [NSDate date];
 	NSDateFormatter *dateFormat = [[NSDateFormatter alloc]init];
