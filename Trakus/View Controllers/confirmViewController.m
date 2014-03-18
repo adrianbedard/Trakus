@@ -15,6 +15,9 @@
 @property (strong, nonatomic) NSString *time;
 @property (strong, nonatomic) IBOutlet UILabel *timeText;
 @property (strong, nonatomic) NSString *displayedText;
+@property (strong, nonatomic) NSString* behaviorOne;
+@property (strong, nonatomic) NSString* behaviorTwo;
+@property (strong, nonatomic) NSString* behaviorThree;
 @end
 
 @implementation confirmViewController
@@ -34,13 +37,33 @@
 	// Do any additional setup after loading the view.
 	
 		//	self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default BackGround.png"]];
-	UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TrakusTab1.1.png"]];
+	/*UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TrakusTab1.1.png"]];
 	
 	[self.view addSubview:backgroundView];
 	[self.view sendSubviewToBack:backgroundView];
+	 
+	*/
+	
+	self.behaviorOne = @"N/A";
+	self.behaviorTwo = @"N/A";
+	self.behaviorThree = @"N/A";
 	
 	NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
-	self.behavior = [@"You are tracking: " stringByAppendingString:[data objectForKey:@"behavior"]];
+	
+	self.behaviorOne = [data objectForKey:@"behavior"];
+	self.behaviorTwo = [data objectForKey:@"SecondaryBehavior"];
+	self.behaviorThree = [data objectForKey:@"ThirdBehavior"];
+	self.behavior = [@"You are tracking: " stringByAppendingString:self.behaviorOne];
+	if(![self.behaviorTwo isEqual:@"N/A"])
+		{
+		self.behavior = [self.behavior stringByAppendingString:@" "];
+		self.behavior = [self.behavior stringByAppendingString:self.behaviorTwo];
+		}
+	if(![self.behaviorThree isEqual:@"N/A"])
+		{
+		self.behavior = [self.behavior stringByAppendingString:@" "];
+		self.behavior = [self.behavior stringByAppendingString:self.behaviorThree];
+		}
 	
 		self.time = [@"You will be reminded at: " stringByAppendingString:[data objectForKey:@"alertTime"]];
 	

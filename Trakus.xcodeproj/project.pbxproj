@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C039DE818D14788008A13AD /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C039DE718D14788008A13AD /* TestViewController.m */; };
 		9C0D82301815A46D005508F1 /* NSDateFormated.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D822F1815A46D005508F1 /* NSDateFormated.m */; };
 		9C0D82331815AB14005508F1 /* calendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D82321815AB14005508F1 /* calendarViewController.m */; };
+		9C1140D718CD2CE9002D87C3 /* BehaviorCountSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1140D618CD2CE9002D87C3 /* BehaviorCountSetup.m */; };
 		9C3801111800CC00009A79F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3801101800CC00009A79F7 /* Foundation.framework */; };
 		9C3801131800CC00009A79F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3801121800CC00009A79F7 /* CoreGraphics.framework */; };
 		9C3801151800CC00009A79F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3801141800CC00009A79F7 /* UIKit.framework */; };
@@ -62,10 +64,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C039DE618D14788008A13AD /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		9C039DE718D14788008A13AD /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		9C0D822E1815A46D005508F1 /* NSDateFormated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDateFormated.h; path = Classes/NSDateFormated.h; sourceTree = "<group>"; };
 		9C0D822F1815A46D005508F1 /* NSDateFormated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDateFormated.m; path = Classes/NSDateFormated.m; sourceTree = "<group>"; };
 		9C0D82311815AB14005508F1 /* calendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = calendarViewController.h; path = "View Controllers/calendarViewController.h"; sourceTree = "<group>"; };
 		9C0D82321815AB14005508F1 /* calendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = calendarViewController.m; path = "View Controllers/calendarViewController.m"; sourceTree = "<group>"; };
+		9C1140D518CD2CE9002D87C3 /* BehaviorCountSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BehaviorCountSetup.h; path = "View Controllers/BehaviorCountSetup.h"; sourceTree = "<group>"; };
+		9C1140D618CD2CE9002D87C3 /* BehaviorCountSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BehaviorCountSetup.m; path = "View Controllers/BehaviorCountSetup.m"; sourceTree = "<group>"; };
 		9C38010D1800CC00009A79F7 /* Trakus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trakus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3801101800CC00009A79F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C3801121800CC00009A79F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -200,6 +206,8 @@
 				9CE12015188609C2006D4F27 /* Default Background.png */,
 				9CE1201718860C16006D4F27 /* FullLayout-1.png */,
 				9C3801221800CC00009A79F7 /* Main.storyboard */,
+				9C039DE618D14788008A13AD /* TestViewController.h */,
+				9C039DE718D14788008A13AD /* TestViewController.m */,
 				9CBBF789189345890072B0EF /* TrakusTab1.0.png */,
 				9C3801521800F19C009A79F7 /* Classes */,
 				9C38014E1800ECD8009A79F7 /* VCs */,
@@ -240,6 +248,8 @@
 		9C38014E1800ECD8009A79F7 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				9C1140D518CD2CE9002D87C3 /* BehaviorCountSetup.h */,
+				9C1140D618CD2CE9002D87C3 /* BehaviorCountSetup.m */,
 				9CE1201F1886113B006D4F27 /* Notifier Background.h */,
 				9CE120201886113B006D4F27 /* Notifier Background.m */,
 				9CE1201C18860DA2006D4F27 /* TabBarWithColorViewController.h */,
@@ -414,9 +424,11 @@
 				9CC1EBA0186CB18F00A32E6D /* emailViewController.m in Sources */,
 				9C38014D1800E2DB009A79F7 /* LaunchViewController.m in Sources */,
 				9C3801581800F3D7009A79F7 /* sleepTime.m in Sources */,
+				9C039DE818D14788008A13AD /* TestViewController.m in Sources */,
 				9C83C868180329C800EAD954 /* aggression.m in Sources */,
 				9C3801271800CC00009A79F7 /* TrakusViewController.m in Sources */,
 				9CE120211886113B006D4F27 /* Notifier Background.m in Sources */,
+				9C1140D718CD2CE9002D87C3 /* BehaviorCountSetup.m in Sources */,
 				9CC1F22C1809F1D200FB939D /* confirmViewController.m in Sources */,
 				9C83C87D1804DF6800EAD954 /* setup2ViewController.m in Sources */,
 				9C0D82331815AB14005508F1 /* calendarViewController.m in Sources */,
@@ -561,7 +573,7 @@
 				GCC_PREFIX_HEADER = "Trakus/Trakus-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Trakus/Trakus-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/adrianbedard/Desktop/Desktop/Work/Trakus/Trakus,
@@ -590,7 +602,7 @@
 				GCC_PREFIX_HEADER = "Trakus/Trakus-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Trakus/Trakus-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/adrianbedard/Desktop/Desktop/Work/Trakus/Trakus,

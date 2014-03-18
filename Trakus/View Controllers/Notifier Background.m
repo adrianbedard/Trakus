@@ -36,10 +36,11 @@
 	// Do any additional setup after loading the view.
 	
 		//self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default BackGround.png"]];
-	UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TrakusTab1.1.png"]];
+	/*UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TrakusTab1.1.png"]];
 	
 	[self.view addSubview:backgroundView];
 	[self.view sendSubviewToBack:backgroundView];
+	 */
 }
 
 - (void)didReceiveMemoryWarning

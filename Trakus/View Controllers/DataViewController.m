@@ -14,24 +14,44 @@
 @property (nonatomic) int occurences;
 @property (nonatomic) int sleep;
 @property (nonatomic) int rating;
+@property (nonatomic) int occurencesTemp;
+@property (nonatomic) int sleepTemp;
+@property (nonatomic) int ratingTemp;
 @property (strong, nonatomic) IBOutlet UILabel *sleepLabel;
 @property (strong, nonatomic) IBOutlet UILabel *ratingLabel;
 @property (strong, nonatomic) NSString *printedDate;
 @property (strong, nonatomic) IBOutlet UILabel *occurencesLabel;
 @property (strong, nonatomic) IBOutlet UIStepper *counter;
 @property (strong, nonatomic) NSString *behavior;
+@property (strong, nonatomic) NSString *behavior2;
+@property (strong, nonatomic) NSString *behavior3;
 @property (nonatomic, retain) NSMutableArray *primaryData;
 @property (nonatomic, retain) NSMutableArray *secondaryData;
 @property (nonatomic, retain) NSMutableArray *sleepData;
 @property (nonatomic) int dayDiff;
 @property (nonatomic) NSInteger ratingObject;
+
+@property (strong, nonatomic) IBOutlet UILabel *SecondTitle;
+@property (strong, nonatomic) IBOutlet UILabel *Worst2;
+@property (strong, nonatomic) IBOutlet UILabel *Best2;
+@property (strong, nonatomic) IBOutlet UISlider *Slider2;
+
+@property (strong, nonatomic) IBOutlet UILabel *ThirdTitle;
+@property (strong, nonatomic) IBOutlet UISlider *ThirdSlider;
+@property (strong, nonatomic) IBOutlet UILabel *Worst3;
+@property (strong, nonatomic) IBOutlet UILabel *Best3;
+
+
 @end
 
 @implementation DataViewController
 
-- (IBAction)occurencesChanged:(UIStepper *)sender
-{
-	self.occurences = [sender value];
+
+
+- (IBAction)storeData:(UIButton *)sender {
+	self.rating = self.ratingTemp;
+	self.occurences = self.occurencesTemp;
+	self.sleep = self.sleepTemp;
 	[self updateUI];
 }
 
@@ -45,13 +65,18 @@
     return self;
 }
 
-- (IBAction)sleepSlider:(UISlider *)sender {
-	self.sleep = sender.value;
-	[self updateUI];
-}
+
 
 - (IBAction)ratingSlider:(UISlider *)sender {
-	self.rating = sender.value;
+	self.ratingTemp = sender.value;
+	[self updateUI];
+}
+- (IBAction)secondRating:(UISlider *)sender {
+	self.occurencesTemp = sender.value;
+	[self updateUI];
+}
+- (IBAction)thirdRating:(UISlider *)sender {
+	self.sleepTemp = sender.value;
 	[self updateUI];
 }
 
@@ -74,6 +99,9 @@
 	
 	NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
 	self.behavior = [data objectForKey:@"behavior"];
+	self.behavior2 = [data objectForKey:@"SecondaryBehavior"];
+	self.behavior3 = [data objectForKey:@"ThirdBehavior"];
+
 	
 	/*self.primaryData = [[NSMutableArray alloc]init];
 	self.secondaryData = [[NSMutableArray alloc]init];
@@ -129,26 +157,48 @@
 {
 				NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
 	//update the UI
-	self.displayedOccurences.text = [NSString stringWithFormat:@"%d", self.occurences];
-	self.sleepLabel.text = [NSString stringWithFormat:@"Hours slept: %d hours", self.sleep];
+	self.displayedOccurences.text = [NSString stringWithFormat:@"%d", self.occurencesTemp];
+	self.sleepLabel.text = [NSString stringWithFormat:@"Hours slept: %d hours", self.sleepTemp];
 	
 	
 	
-	self.ratingLabel.text = [NSString stringWithFormat:@"%@ rating for today: %d", self.behavior, self.rating];
+	self.ratingLabel.text = [NSString stringWithFormat:@"%@ rating for today: %d", self.behavior, self.ratingTemp];
 	
-	self.occurencesLabel.alpha = 1;
-	self.displayedOccurences.alpha = 1;
-	self.counter.alpha = 1;
-	self.counter.enabled = true;
+	self.SecondTitle.text = [NSString stringWithFormat:@"%@ rating for today: %d", self.behavior2, self.occurencesTemp];
 	
-	if([self.behavior isEqualToString:@"Anxiety"] || [self.behavior isEqualToString:@"Mood"])
+	self.ThirdTitle.text = [NSString stringWithFormat:@"%@ rating for today: %d", self.behavior3, self.sleepTemp];
+	
+	if([self.behavior2 isEqual:@"N/A"])
 		{
-		self.occurencesLabel.alpha = 0;
-		self.displayedOccurences.alpha = 0;
-		self.counter.alpha = 0;
-		self.counter.enabled = false;
+		self.SecondTitle.alpha = 0;
+		self.Slider2.alpha = 0;
+		self.Best2.alpha = 0;
+		self.Worst2.alpha = 0;
+		self.Slider2.enabled = 0;
 		}
-	
+	else{
+		self.SecondTitle.alpha = 1;
+		self.Slider2.alpha = 1;
+		self.Best2.alpha = 1;
+		self.Worst2.alpha = 1;
+		self.Slider2.enabled = 1;
+		}
+	if([self.behavior3 isEqual:@"N/A"])
+		{
+		self.ThirdTitle.alpha = 0;
+		self.ThirdSlider.alpha = 0;
+		self.Best3.alpha = 0;
+		self.Worst3.alpha = 0;
+		self.ThirdSlider.enabled = 0;
+		}
+	else
+		{
+		self.ThirdTitle.alpha = 1;
+		self.ThirdSlider.alpha = 1;
+		self.Best3.alpha = 1;
+		self.Worst3.alpha = 1;
+		self.ThirdSlider.enabled = 1;
+		}
 	
 	NSMutableArray *primaryHolder = [[NSMutableArray alloc] initWithArray:self.primaryData];
 	NSMutableArray *secondaryHolder = [[NSMutableArray alloc] initWithArray:self.secondaryData];

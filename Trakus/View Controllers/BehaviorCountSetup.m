@@ -1,18 +1,18 @@
 //
-//  TabBarWithColorViewController.m
+//  BehaviorCountSetup.m
 //  Trakus
 //
-//  Created by ADRIAN BEDARD on 1/14/14.
+//  Created by ADRIAN BEDARD on 3/9/14.
 //  Copyright (c) 2014 Hi Dev Mobile. All rights reserved.
 //
 
-#import "TabBarWithColorViewController.h"
+#import "BehaviorCountSetup.h"
 
-@interface TabBarWithColorViewController ()
+@interface BehaviorCountSetup ()
 
 @end
 
-@implementation TabBarWithColorViewController
+@implementation BehaviorCountSetup
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,13 +27,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-	//self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Default BackGround.png"]];
-	/*UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TrakusTab1.1.png"]];
-
-	[self.view addSubview:backgroundView];
-	[self.view sendSubviewToBack:backgroundView];
-	 */
-	
 }
 
 - (void)didReceiveMemoryWarning

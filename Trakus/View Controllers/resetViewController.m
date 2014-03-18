@@ -9,7 +9,7 @@
 #import "resetViewController.h"
 
 @interface resetViewController ()
-
+@property (strong, nonatomic) IBOutlet UIDatePicker *alertTime;
 @end
 
 @implementation resetViewController
@@ -31,6 +31,13 @@
 	[data setObject:Nil forKey:@"sleepDataArray"];
 	[self performSegueWithIdentifier:@"reset" sender:nil];
 }
+- (IBAction)alertTimer:(UIDatePicker *)sender {
+	
+	NSTimeInterval alertGap = [self.alertTime.date timeIntervalSince1970];
+	NSUserDefaults *data = [NSUserDefaults standardUserDefaults];
+	[data setDouble:alertGap forKey:@"notificationTime"];
+}
+
 
 - (void)viewDidLoad
 {
